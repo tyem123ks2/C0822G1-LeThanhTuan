@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORM</title>
+</head>
+<style>
+    div.a {
+        text-align: center;
+        background-color: #FF9933;
+        color: white;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: none;}
+</style>
+<body>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <fieldset>
+        <div class="a">
+            <legend>SỞ THÍCH CỦA BẠN</legend>
+        </div>
+        <div style="color: Blue">
+            Họ và tên:  <input type="Name" placeholder="VD: Nguyễn Văn A"/> <br>
+            Email: <input type="email" placeholder="VD: valorant@gmail.com"/> <br>
+            Sở thích: <br/>
+        </div>
+        <div style="color: darkorange">
+            <label><input name="hobby" value="sprot" type="checkbox"/> Thể thao </label>
+            <label><input name="hobby" value="music" type="checkbox"/> Âm nhạc </label>
+            <label><input name="hobby" value="read" type="checkbox"/> Đọc sách </label> <br/>
+            <label><input name="hobby" value="online" type="checkbox"/> Lướt web </label>
+            <label><input name="hobby" value="game" type="checkbox"/> Chơi game </label>
+            <label><input name="hobby" value="film" type="checkbox"/> Điện ảnh </label> <br/>
+            <label><input name="hobby" value="travel" type="checkbox"/> Du lịch </label> <br/>
+        </div>
+        <input type="submit" value="Gửi thông tin"/>
+        <input type="reset" value="Nhập lại"/>
+    </fieldset>
+</form>
+</body>
+</html>

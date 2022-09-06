@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐĂNG KÍ HỌC VIÊN</title>
+</head>
+<style>
+    div.a {
+        text-align: left;
+        background-color: #66CCFF;
+        color: blue;
+        padding: 5px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: none;}
+    td{
+        width: 100px;
+    }
+</style>
+<body>
+    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <fieldset>
+        <div class="a">
+            <legend>ĐĂNG KÍ HỌC VIÊN</legend>
+        </div>
+        <div style="color: #3399FF">
+            Họ và tên:  <input type="Name" placeholder="VD: Nguyễn Văn A"/> <br>
+            Ngày sinh: <input type="Date"> <br>
+        </div>
+        <span style="color: #3399FF" > Giới tính </span>
+                <label><input name="gender"  type="radio"/> Nam </label>
+                <label><input name="gender"  type="radio"/> Nữ </label>
+                <br>
+        <span style="color: #3399FF" > Địa chỉ </span> <br>
+        <textarea cols="30" rows="4"> </textarea> <br>
+        <span style="color: #3399FF" > Lớp </span>
+            <select name="class">
+                <option value="12A1">12A1</option>
+                <option value="12A2">12A2</option>
+                <option value="12B1">12B1</option>
+                <option value="12B2">12B2</option>
+                <option value="12B3">12B3</option>
+            </select> <br>
+        <span style="color: #3399FF" > Email </span>
+            <input type="email" placeholder="VD: valorant@riot.com"/> <br>
+        <span style="color: #3399FF" > Điện thoại </span>
+            <input type="number" placeholder="VD: 0123456789"/> <br>
+        <input type="submit" value="Gửi thông tin"/>
+        <input type="reset" value="Nhập lại"/>
+    </fieldset>
+    </form>
+</body>
+</html>
