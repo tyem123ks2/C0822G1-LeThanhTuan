@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--hiển thị kết quả hàm Alert -->
+    <button type="button" onclick="showMessage();">Click Me!</button>
+        <script>
+            function showMessage() {
+                alert("You want to play? Let's play")
+                }
+        </script>
+    <!--hiển thị kết quả sử dụng thẻ HTML  -->
+    <div id="MessageDiv"></div>
+    <button type="button" onclick="showMessage();">Click Me!</button>
+        <script>
+                function showMessage() {
+                    document.getElementById("MessageDiv").innerHTML = "They have no idea how heartless I am"
+                }
+        </script>
+    <!--hiển thị kết quả sử dụng qua document.write() -->
+             <button type="button" onclick="showMessage();">Click Me!</button>
+             <script>
+                function showMessage() {
+                   document.write("What this")
+                }
+                 </script>
+    <!--hiển thị kết quả sử dụng qua document.write() -->
+            <button type="button" onclick="showMessage();">Click Me!</button>
+            <script>
+                function showMessage() {
+                    console.log("Hey World");
+                    }
+        </script>
+</body>
+</html>
