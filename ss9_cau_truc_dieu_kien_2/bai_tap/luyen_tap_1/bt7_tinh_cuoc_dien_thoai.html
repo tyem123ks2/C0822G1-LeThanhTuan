@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIÁ CƯỚC ĐIỆN THOẠI</title>
+</head>
+<body>
+<script>
+    let no1 = prompt("Nhập số phút gọi của khách hàng trong tháng: ");
+    let result = eval(no1)*500
+    let m20 = 20*500;
+    let m50 = 50*600;
+    let result3 = eval(no1-20)*600
+    let result4 = eval(no1-50)*700
+        no1 = parseInt(no1);
+        result = parseInt(result);
+        result3 = parseInt(result3);
+        result4 = parseInt(result4);
+    if (no1 <= 20) {
+        alert("Giá cước tháng này là: " + result + " VNĐ")
+    }
+    else if ( no1>20 && no1<=50) {
+        alert("Giá cước tháng này là: " + eval(m20 + result3)  + "  VNĐ")
+    }
+    else {
+        alert("Giá cước tháng này là: " + eval(m20 + m50 + result4) + "  - VNĐ")
+    }
+
+</script>
+</body>
+</html>

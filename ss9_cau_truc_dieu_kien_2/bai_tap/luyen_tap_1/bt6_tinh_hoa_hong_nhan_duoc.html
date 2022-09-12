@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOA HỒNG</title>
+</head>
+<body>
+<script>
+    let ntotal = prompt("Nhập tổng số tiền các hợp đồng bảo hiểm đã phát hành trong tháng này (VNĐ): ");
+    let nsalary = (eval(ntotal)/100);
+        ntotal = parseFloat(ntotal);
+        nsalary = parseFloat(nsalary);
+
+    if (ntotal <= 25000000) {
+        alert("Tiền hoa hồng tháng này là:  " + eval(nsalary)*5 + "VNĐ")
+    } else if (ntotal >= 25000000) {
+        alert("Tiền hoa hồng tháng này là:  " + eval(nsalary)*10 + "VNĐ")
+    } else if (ntotal >= 50000000) {
+        alert("Tiền hoa hồng tháng này là:  " + eval(nsalary)*20 + "VNĐ")
+    } else {
+        alert("Tiền hoa hồng tháng này là:  " + eval(nsalary)*25 + "VNĐ")
+    }
+</script>
+</body>
+</html>

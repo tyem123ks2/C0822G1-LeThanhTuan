@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH SỐ CÂN NẶNG CƠ THỂ</title>
+</head>
+<body>
+<script>
+    inputHeight = prompt("Nhập chiều cao của bạn (m)");
+    inputWeight = prompt("Nhập cân nặng của bạn (kg)");
+    letHeight = Number(inputHeight);
+    letWeight = Number(inputWeight);
+        let BMI = letWeight / (letHeight * 2);
+        document.write("BMI của bạn = ", +BMI);
+    if (BMI < 18)
+        document.write("Bạn: Thiếu cân");
+    else if (BMI < 25.0)
+        document.write("Bạn: Bình thường");
+    else if (BMI < 30.0)
+        document.write("Bạn: Thừa cân");
+    else
+        document.write("Bạn: Béo phì");
+</script>
+</body>
+</html>
