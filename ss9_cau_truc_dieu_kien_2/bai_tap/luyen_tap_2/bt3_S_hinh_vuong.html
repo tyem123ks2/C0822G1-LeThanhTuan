@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="a">
+    <button type="button" onclick="cal2()">OK</button>
+    <div id="result"></div>
+    <script>
+    function cal2(){
+        let canh = +document.getElementById("a").value;
+        document.getElementById("result").innerHTML = "S hình vuông là : " + (canh * canh);
+    }
+</script>
+</body>
+</html>

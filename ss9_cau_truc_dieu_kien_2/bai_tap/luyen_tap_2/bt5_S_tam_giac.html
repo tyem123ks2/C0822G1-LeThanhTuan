@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="a" placeholder="Nhập chiều dài cạnh góc vuông thứ nhất">
+    <input type="text" id="b" placeholder="Nhập chiều dài cạnh góc vuông thứ 2">
+    <button type="button" onclick="cal3()">OK</button>
+    <div id="result"></div>
+<script>
+    function cal3(){
+        let c1 = +document.getElementById("a").value;
+        let c2 = +document.getElementById("b").value;
+        document.getElementById("result").innerHTML = "S tam giác vuông là : " + (c1 * c2/2);
+    }
+</script>
+</body>
+</html>

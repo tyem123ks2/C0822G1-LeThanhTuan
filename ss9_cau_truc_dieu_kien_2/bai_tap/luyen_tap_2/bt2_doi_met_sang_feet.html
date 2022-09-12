@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="number"> m
+    <span>=</span>
+    <input type="text" id="result"> feet
+    <button type="button" onclick="cal1()">OK</button>
+<script>
+    function cal1() {
+        let number = +document.getElementById("number").value;
+        document.getElementById("result").value = number * 3.2808;
+    }
+</script>
+</body>
+</html>
