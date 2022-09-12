@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cạnh tam giác</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào chiều dài cạnh a");
+    let b = +prompt("Nhập vào chiều dài cạnh b");
+    let c = +prompt("Nhập vào chiều dài cạnh c");
+        let c1 = a + b;
+        let c2 = b + c;
+        let c3 = a + c;
+    if (a > 0 && b > 0 && c > 0) {
+        if (c1 > c && c2 > a && c3 > b) {
+            alert("a,b,c là 3 cạnh của tam giác ");
+        } else if (c1 < c) {
+            alert("a,b,c không là 3 cạnh của tam giác. Vì a+b<c");
+        } else if (c2 < a) {
+            alert("a,b,c không là 3 cạnh của tam giác. Vì b+c<a");
+        } else {
+            alert("a,b,c không là 3 cạnh của tam giác. Vì a+c<b");
+        }
+    } else {
+        alert("Nhập lại chiều dài của các cạnh (các cạnh >0)")
+    }
+</script>
+</body>
+</html>
