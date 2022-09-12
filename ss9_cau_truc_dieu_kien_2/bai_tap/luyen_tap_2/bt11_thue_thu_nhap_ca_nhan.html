@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GIÁ CƯỚC ĐIỆN THOẠI</title>
+</head>
+<body>
+<script>
+    let nsalary = prompt("Nhập tổng số tiền lương nhận được tháng này (VNĐ): ");
+    nsalary = parseInt(nsalary);
+    if (nsalary > 5000000 && nsalary < 10000000) {
+        alert("Thuế thu nhập cá nhân tháng nay là:  " + ((nsalary / 100) * 250000) - +"VNĐ")
+    } else if (nsalary > 10000000 && nsalary < 18000000) {
+        alert("Thuế thu nhập cá nhân tháng nay là:  " + ((nsalary) * 10 - 750000) + "VNĐ")
+    } else if (nsalary > 18000000 && nsalary < 32000000) {
+        alert("Thuế thu nhập cá nhân tháng nay là:  " + ((nsalary) * 20 - 1650000) + "VNĐ")
+    } else if (nsalary > 32000000 && nsalary < 52000000) {
+        alert("Thuế thu nhập cá nhân tháng nay là:  " + ((nsalary) * 25 - 3250000) + "VNĐ")
+    } else if (nsalary > 52000000 && nsalary < 80000000) {
+        alert("Thuế thu nhập cá nhân tháng nay là:  " + ((nsalary) * 30 - 5850000) + "VNĐ")
+    } else {
+        alert("Thuế thu nhập cá nhân tháng nay là:  " + ((nsalary) * 35 - 9850000) + "VNĐ")
+    }
+</script>
+</body>
+</html>

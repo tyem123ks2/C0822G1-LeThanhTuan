@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let no1 = prompt("Nhập số điện đã sử dụng trong tháng (kWh): ");
+    let result = no1*1678
+    let m50 = 50*1678;
+    let m100 = 100*2014;
+    let result3 = (no1-50)*1734
+    let result4 = (no1-100)*700
+        no1 = parseInt(no1);
+        result = parseInt(result);
+        result3 = parseInt(result3);
+        result4 = parseInt(result4);
+if (no1 <= 50) {
+alert("Tiền điện tháng này là: " + result + " VNĐ")
+}
+else if ( no1>50 && no1<=100) {
+alert("Tiền điện tháng này là: " + (m50 + result3)  + "  VNĐ")
+}
+else {
+alert("Tiền điện tháng này là: " + (m20 + m50 + result4) + "  - VNĐ")
+}
+
+</script>
+</body>
+</html>
