@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>FOR-IN</title>
 </head>
 <body>
-$END$
 </body>
 </html>
+<script>
+    var person = {firstName: "Le", lastName: "Lai", addressLine: "Ha Noi"};
+    for (var p in person) {
+        console.log(person[p]);
+    }
+</script>
