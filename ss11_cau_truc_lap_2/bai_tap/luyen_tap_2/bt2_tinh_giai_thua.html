@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TÍNH GIAI THỪA</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập số nguyên dương bất kì:  "));
+    let factorial = 1;
+
+    if (number < 0) {
+        alert("Error!!");
+        document.write("Vui lòng reset để nhập lại (số nhập vào là số nguyên dương)");
+    } else {
+        for (let i = 1; i < number; i++)
+            factorial = factorial * i;
+        document.write("Giai thừa của " + " " + number + " là:" + " " + factorial);
+    }
+</script>
+</body>
+</html>
