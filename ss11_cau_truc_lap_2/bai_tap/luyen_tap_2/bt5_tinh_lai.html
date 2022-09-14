@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    let money = Number(prompt("Nhập số tiền gửi ngân hàng lãi suất 5%/năm:  "));
+    let money = Number(prompt("Nhập số tiền gửi ngân hàng lãi suất 6%/năm:  "));
     let month = Number(prompt("Nhập số tháng gửi: "));
     let interest = 0;
     let total = interest;
-    document.write("Số tiền bạn gửi là " + money + " VNĐ trong " + month + " tháng với lãi suất 5%/năm" + "<br>");
+    document.write("Số tiền bạn gửi là " + money + " VNĐ trong " + month + " tháng với lãi suất 6%/năm" + "<br>");
     for (let i = 0; i < month; i++) {
-        interest = ((money * 5) / 100) / 12;
+        interest = ((money * 6) / 100) / 12;
         total += interest;
         money += interest;
         document.write("Tiền lãi tháng " + (i + 1) + " là: " + interest.toFixed(0) + " VNĐ<br>");
