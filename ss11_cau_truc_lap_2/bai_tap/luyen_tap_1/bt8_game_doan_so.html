@@ -5,6 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-
+<button type="button" onclick="play()">CHƠI!!</button>
+<script>
+    function play() {
+        let limit = +prompt("khoảng kết thúc tại:");
+        let random = Math.floor(Math.random() * limit);
+        let guess = +prompt("nhập số bạn muốn đoán");
+        while (guess < random || guess > random) {
+            if (guess < random) {
+                alert("số bạn đoán bé hơn giá trị cần tìm");
+            }
+            if (guess > random) {
+                alert("số bạn đoán lớn hơn giá trị cần tìm");
+            }
+            guess = +prompt("nhập số bạn muốn đoán");
+        }
+        if (guess === random) {
+            alert("chúc mừng bạn đã đoán đúng");
+        }
+    }
+</script>
 </body>
 </html>
