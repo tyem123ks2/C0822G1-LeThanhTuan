@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = new Array(size);
+    let count = 0;
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+        for(let i = 0; i < size; i++) {
+            if (array[i] < 0) {
+                count = count + 1;
+            }
+        }
+    document.write("Số lượng các số âm trong mảng vừa nhập là: " + count);
+</script>
+</body>
+</html>

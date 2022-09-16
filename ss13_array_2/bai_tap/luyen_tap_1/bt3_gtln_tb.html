@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = new Array(size);
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    let max = Math.max(...array);
+    let sum = 0;
+    let x = 0;
+    for (let i = 0; i < size; i++) {
+        x = array[i];
+        sum += x;
+    }
+    let avg;
+        avg = +sum / array.length;
+    alert("Số lớn nhất trong mảng là: " + max + "\nVị trí trong mảng: " + array.indexOf(max) + "\nMảng ban đầu: " + array + "\nGiá trị trung bình là: " + avg);
+</script>
+</body>
+</html>

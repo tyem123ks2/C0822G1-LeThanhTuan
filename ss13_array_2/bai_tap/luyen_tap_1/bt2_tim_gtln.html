@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = new Array(size);
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1) + " (các số nhập khác nhau)");
+    }
+        let max = Math.max(...array);
+        alert("Số lớn nhất trong mảng là: " + max + "\nVị trí trong mảng: " + array.indexOf(max) + "\nMảng ban đầu: " + array);
+    // let max = array[0];
+    // let max_index = 0;
+    // for (let i = 1; i < size; i++) {
+    //     if (max < array[i]) {
+    //         max = array[i];
+    //         max_index = i;
+    //     }
+    // }
+    // document.write("số lớn nhất là: " + max + "vị trí" + max_index);
+</script>
+</body>
+</html>

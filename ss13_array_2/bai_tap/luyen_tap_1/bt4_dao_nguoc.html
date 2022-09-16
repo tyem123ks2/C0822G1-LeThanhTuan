@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = new Array(size);
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    document.write("Mảng đảo ngược lại là:  " + array.reverse() + "\nMảng ban đầu đã nhập: " + array.reverse());
+</script>
+</body>
+</html>
