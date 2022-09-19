@@ -10,12 +10,12 @@
     for (let i = 0; i < 10; i++) {
         numberArray[i] = +prompt("Nhập vào giá trị thứ " + (i + 1));
     }
-    let so = +prompt("Nhập vào một số nguyên: ");
-    if (numberArray.indexOf(so) !== -1) {
-        alert("V is in the array");
-    } else {
-        alert("V is not in the array");
+    let num = +prompt("Nhập vào một số nguyên");
+    let index = numberArray.indexOf(num);
+    if (index !== -1) {
+        numberArray.splice(index, 1);
     }
+    document.write(numberArray);
 </script>
 </body>
 </html>
