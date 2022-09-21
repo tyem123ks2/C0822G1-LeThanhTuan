@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
-    let number1 = +prompt("Nhập vào số thứ nhất: ");
-    let number2 = +prompt("Nhập vào số thứ hai: ");
-    swap(number1, number2);
-
     function swap(num1, num2) {
         let temp = num1;
             num1 = num2;
             num2 = temp;
-        document.write(num1 + "<br>" + num2);
+        document.write("Số thứ nhất là: " + num1 + "<br>" + "số thứ hai là: "  + num2);
     }
+    let number1 = +prompt("Nhập vào số thứ nhất: ");
+    let number2 = +prompt("Nhập vào số thứ hai: ");
+    swap(number1, number2);
 </script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="demoCanvas" width="600" height="600"></canvas>
+</body>
+<script>
+    class Rectangle {
+        constructor(width, length) {
+            this.width = width;
+            this.length = length;
+        }
+        getArea() {
+            return this.width * this.length;
+        }
+        getPerimeter() {
+            return (this.width + this.length) * 2;
+        }
+    display(x, y) {
+        let canvas = document.getElementById("demoCanvas");
+        let ctx = canvas.getContext("2d");
+        ctx.fillStyle = "rgba(41,107,212,0.92)";
+        ctx.fillRect(x, y, this.length, this.width);
+        }
+    }
+    let rectangle = new Rectangle(150, 250);
+    let area = rectangle.getArea();
+    let perimeter = rectangle.getPerimeter();
+    document.write("Diện tích hình chữ nhât là: " + area + "; Chu vi hình chữ nhât là: " + perimeter);
+    rectangle.display(20, 20);
+</script>
+</script>
+</html>

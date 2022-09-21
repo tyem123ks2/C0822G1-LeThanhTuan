@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
+    function checkNumber(num) {
+        if (num < 0) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
     let number = +prompt("Nhập vào số nguyên bất kì: ");
     let result = checkNumber(number);
-        function checkNumber(num) {
-            if (num < 0) {
-                return false;
-            }
-        else {
-            return true;
-            }
-        }
-   alert(result);
+    alert(result);
 </script>
 </body>
 </html>
