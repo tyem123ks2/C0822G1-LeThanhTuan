@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = [2,2,22,4,6,8,10,12,14,16,18,20,22,24,26,28,30];
+    let number = prompt("Nhập vào ký tự muốn check: ");
+    let result = checkCharacter(number, array1);
+    function checkCharacter(kyTu, array) {
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == kyTu) {
+                count++;
+            }
+        }
+        if (count === 0) {
+            return count = -1;
+        }
+        return count;
+    }
+    document.write(result);
+</script>
+</body>
+</html>
