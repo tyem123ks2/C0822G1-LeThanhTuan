@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập vào độ dài của mảng: ");
+    let array = new Array(size);
+    let count = 0;
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1));
+    }
+    // // function maxArray(array) {
+    // // let max = maxArray[0];
+    // // for (let i = 0; i < array.length; i++) {
+    //     if (max < maxArray[i]) {
+    //         max = maxArray[1];
+    // }
+    // }
+    //     break
+
+    let max = Math.max(...array);
+    for (let i = 0; i < size; i++) {
+        if (array[i] == max){
+            count ++;
+        }
+    }
+    document.write("Số lượng số lớn nhất trong mảng là: " + count);
+</script>
+</body>
+</html>
