@@ -7,7 +7,18 @@
 <body>
 </body>
 <script>
-    let radius = +prompt("Nhập vào bán kính hình tròn: ");
+    const pi = 3.14;
+    function area(radius) {
+        let area = radius * radius * pi;
+        return area;
+    }
+    function perimeter(radius) {
+        let perimeter = radius * 2 * pi;
+        return perimeter;
+    }
+
+    alert("Diện tích hình tròn là: " + area(8));
+    alert("Chu vi hình tròn là: " + perimeter(8));
 
 </script>
 </html>

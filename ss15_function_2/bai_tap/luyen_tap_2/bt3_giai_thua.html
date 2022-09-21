@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = +prompt("nhập số muốn tính giai thừa");
+    let result = giaiThua(num);
+        function giaiThua(num) {
+            let factorial = 1;
+                for (let i = 1; i <= num; i++) {
+                    factorial *= i;
+                }
+                    return factorial;
+    }
+    alert("Giai thừa của " + num + " là: " + result);
+</script>
+</body>
+</html>

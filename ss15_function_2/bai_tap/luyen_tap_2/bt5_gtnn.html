@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let no1 = +prompt("Nhập vào số thứ nhất: ");
+    let no2 = +prompt("Nhập vào số thứ hai: ");
+    let no3 = +prompt("Nhập vào số thứ ba: ");
+    let result = compare(no1, no2, no3);
+    function compare(num1, num2, num3) {
+        if (num1 < num2 && num1 < num3) {
+            return num1;
+        } else if (num2 < num3) {
+            return num2;
+        } else {
+            return num3;
+        }
+    }
+    document.write(result + " là số nhỏ nhất trong ba số");
+</script>
+</body>
+</html>
