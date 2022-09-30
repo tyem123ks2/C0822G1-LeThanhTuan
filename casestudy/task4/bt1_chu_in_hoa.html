@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập vào 1 chuỗi kí tự:");
+    document.write("Chuỗi kí tự đã nhập: " + str + "<br>");
+    let arr = str.toLowerCase().split(" ");
+
+    document.write("Dữ liệu khi chuyển hóa: ");
+    for (let i = 0; i < arr.length; i++) {
+        arr[i].trim();
+
+        document.write(arr[i].charAt(0).toUpperCase());
+        for (let j = 1; j < arr[i].length; j++) {
+            document.write(arr[i].charAt(j));
+        }
+        document.write(" ");
+    }
+
+    let max = arr[0].length;
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i].length > max) {
+            max = arr[i].length;
+        }
+    }
+
+    let word = max.charAt(0).toUpperCase();
+    for (let i = 1; i < max.length; i++) {
+        word += max.charAt(i);
+    }
+
+    document.write("Tu dai nhat la: ");
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length === max) {
+            document.write(arr[i] + "<br>");
+        }
+
+    }
+    document.write("Tu dai nhat la: " + word);
+
+</script>
+</body>
+</html>

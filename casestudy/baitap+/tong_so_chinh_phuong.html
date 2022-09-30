@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("Nhập độ dài của mảng: ");
+    let arr = new Array(number);
+    for (let i = 0; i < number; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ " + (i + 1) + ":")
+    }
+    document.write("Mảng vừa nhập là: " + arr + "<br>");
+
+    function find_square_number(n) {
+        let i = 0;
+        let flag = 0;
+        while (i < n) {
+            if (Math.pow(i, 2) === n) {
+                flag = 1;
+                break
+            }
+            i++;
+        }
+        return flag;
+    }
+
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let check = find_square_number(arr[i]);
+        if (check === 1) {
+            sum += arr[i];
+        }
+    }
+    document.write("Tổng các số chính phương trong mảng là: " + sum);
+</script>
+</body>
+</html>

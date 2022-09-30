@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number;
+    do {
+        number = prompt("Nhập vào một chữ cái bất kì: ")
+    } while (number.length !== 1)
+    switch (number) {
+        case "o":
+        case "u":
+        case "i":
+        case "a":
+        case "e":
+        case "O":
+        case "U":
+        case "I":
+        case "A":
+        case "E":
+            alert(number + " là nguyên âm.");
+            break;
+        default:
+            alert(number + " là phụ phụ âm");
+    }
+</script>
+</body>
+</html>

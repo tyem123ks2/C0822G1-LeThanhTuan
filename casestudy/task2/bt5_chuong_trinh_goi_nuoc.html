@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap;
+    let giaTien;
+    let tongTien = 0;
+    let soLuong;
+    do {
+        nhap = +prompt("Hãy chọn đồ uống:\n" +
+            "1. Cafe\n" +
+            "2. Cam Vắt\n" +
+            "3. Nước Ép Cà Rốt\n" +
+            "4. Nước Ép Cà Chua\n" +
+            "5. Nước Lọc\n" +
+            "6. Nước Dừa\n" +
+            "7. Thoát Gọi Món")
+        switch (nhap) {
+            case 1:
+                giaTien = 10000;
+                soLuong = +prompt("Cafe có giá là: 10000 VNĐ -" + "Nhập Số Lượng Muốn Mua:");
+                tongTien += giaTien * soLuong;
+                break;
+            case 2:
+                giaTien = 15000;
+                soLuong = +prompt("Cam vắt có giá là 15000 VNĐ - " + "Nhập số lượng muốn mua:");
+                tongTien += giaTien * soLuong;
+                break;
+            case 3:
+                giaTien = 15000;
+                soLuong = +prompt("Nước ép cà rốt có giá Là: 15000 VNĐ - " + "Nhập số lượng muốn mua:");
+                tongTien += giaTien * soLuong;
+                break;
+            case 4:
+                giaTien = 12000;
+                soLuong = +prompt("Nước ép cà chua có giá Là: 12000 VNĐ - " + "Nhập số lượng muốn mua:");
+                tongTien += giaTien * soLuong;
+                break;
+            case 5:
+                giaTien = 5000;
+                alert("Nước lọc có giá là : " + giaTien + " VNĐ");
+                soLuong = +prompt("Nước lọc có giá là 5000 VND - " + "Nhập số lượng muốn mua:");
+                tongTien += giaTien * soLuong;
+                break;
+            case 6:
+                giaTien = 20000;
+                soLuong = +prompt("Nước dừa có giá là: 20000 VNĐ " + "Nhập số lượng muốn mua:");
+                tongTien += giaTien * soLuong;
+                break;
+            case 7:
+                alert("Tổng số tiền là: " + tongTien + " VNĐ");
+                break;
+            default:
+                alert("Hãy nhập lại.");
+        }
+    } while (nhap !== 7)
+    // let menu = prompt("Mới chọn thức uống: 1. Cafe - 2. Cam vắt - 3. Nước ép cà rốt - 4. Nước ép cà chua " +
+    //     "- 5. Nước lọc - 6. Nước dừa - 7. Rời khỏi");
+    // if (menu == 1) {
+    //     let cf1 = +prompt("Đơn giá: 15000VNĐ - Mời nhập số lượng cafe: ");
+    //     alert("Số lượng cafe: " + cf1 + " - Thành tiền: " + 15000 * cf1 + " VNĐ");
+    // } else if (menu == 2) {
+    //     let orange = +prompt("Đơn giá: 20000 VNĐ - Mời nhập số lượng cam vắt: ");
+    //     alert("Số lượng cam vắt: " + orange + " - Thành tiền: " + 20000 * orange + " VNĐ");
+    // } else if (menu == 3) {
+    //     let caRot = +prompt("Đơn giá: 20000 VNĐ - Mời nhập số lượng nước ép cà rốt: ");
+    //     alert("Số lượng nước ép cà rốt: " + caRot + " - Thành tiền: " + 20000 * caRot + " VNĐ");
+    // } else if (menu == 4) {
+    //     let tomato = +prompt("Đơn giá: 13000 VNĐ - Mời nhập số lượng nước ép cà chua: ");
+    //     alert("Số lượng nước ép cà chua: " + tomato + " - Thành tiền: " + 13000 * tomato + " VNĐ");
+    // } else if (menu == 5) {
+    //     let water = +prompt("Đơn giá: 5000 VNĐ - Mời nhập số lượng nước lọc: ");
+    //     alert("Số lượng nước lọc: " + water + " - Thành tiền: " + 5000 * water + " VNĐ");
+    // } else if (menu == 6) {
+    //     let coconut = +prompt("Đơn giá: 20000 VNĐ - Mời nhập số lượng nước dừa: ");
+    //     alert("Số lượng nước dừa: " + coconut + " - Thành tiền: " + 20000 * coconut + " VNĐ");
+    // } else {
+    //     alert("Nhấp F5 nếu muốn lựa chọn lại thức uống");
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập vào chuỗi kí tự:");
+    let arr = [str.charAt(0)];
+
+    for (let i = 1; i < str.length; i++) {
+        if (!arr.includes(str.charAt(i))) {
+            arr.push(str.charAt(i));
+        }
+    }
+    document.write("Số kì tự khác nhau trong chuỗi là: " + arr.length);
+</script>
+</body>
+</html>

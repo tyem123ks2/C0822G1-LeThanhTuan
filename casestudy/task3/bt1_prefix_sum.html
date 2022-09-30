@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size = +prompt("Nhập độ dài mảng: ");
+    let array = new Array(size);
+    let preFixSum = 0;
+    let newArray = [];
+    for (let i = 0; i < size; i++) {
+        array[i] = +prompt("Nhập phần tử vị trí thứ " + (i + 1) + " (các số nhập khác nhau)");
+    }
+    for (let i = 0; i < array.length; i++){
+        preFixSum += array[i];
+        newArray.push(preFixSum);
+}
+    document.write("Mảng prefix_sum là: " + newArray);
+</script>
+</body>
+</html>

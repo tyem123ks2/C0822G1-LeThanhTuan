@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapSo = +prompt("Nhập số phần tử có trong mảng:");
+    let array = [];
+    for (let i = 0; i < nhapSo; i++) {
+        array[i] = +prompt("Nhập các phần tử thứ " + (i + 1));
+    }
+    document.write(array);
+
+    function fibonacy(number) {
+        let a = 0;
+        let b = 1;
+        let c = 1;
+        while (c <= number) {
+            if (number === c) {
+                return true;
+            }
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        return false;
+    }
+
+    let check = true;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0) {
+            check = true;
+        } else if (!fibonacy(array[i])) {
+            check = false;
+            break;
+        }
+    }
+
+    if (check) {
+        alert("OK");
+    } else {
+        alert("No");
+    }
+
+    // let size = +prompt("Nhập vào độ dài mảng cần nhập: ");
+    // let numberArray = [];
+    // for (let i = 0; i < size; i++) {
+    //     numberArray[i] = +prompt("Nhập vào giá trị thứ " + (i + 1));
+    // }
+    // alert("Mảng bạn vừa nhập vào là: " + numberArray);
+    //
+    // let count = 0;
+    // function fibonaci(number) {
+    //     let a = 0;
+    //     let b = 1;
+    //     let c = 1;
+    //     while (c <= number) {
+    //         a = b;
+    //         b = c;
+    //         c = a + b;
+    //         if(number === c){
+    //             return true;
+    //         }
+    //     }
+    //     return false
+    // }
+    // for (let i = 0; i < numberArray.length; i++) {
+    //     if (fibonaci(numberArray[i])){
+    //         count++;
+    //     }
+    // }
+    // if (count === numberArray.length) {
+    //     alert("OK");
+    // } else {
+    //     alert("NO");
+    // }
+
+
+    // for (let i = 0; i < size; i++) {
+    //     if (i == 0 || i == 1) {
+    //     }
+    //     if (numberArray[i] + numberArray[i + 1] === numberArray[i + 2]) {
+    //
+    //         alert("Dãy bạn vừa nhập thuộc dãy Fibonacci.");
+    //         break;
+    //     } else {
+    //         alert("Dãy bạn vừa nhập không thuộc dãy Fibonacci.");
+    //         break;
+    //     }
+    // }
+</script>
+</body>
+</html>

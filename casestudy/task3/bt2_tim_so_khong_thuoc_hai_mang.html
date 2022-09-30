@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arrA = [7, 2, 5, 3, 5, 3];
+    let arrB = [7, 2, 5, 4, 6, 3, 5, 3];
+    let arrC = [];
+    for (let i = 0; i < arrB.length; i++) {
+        for (let j = 0; j < arrA.length; j++) {
+            if (arrB[i] === arrA[j]) {
+                arrB.splice(i, 1);
+                arrC.push(arrB[i]);
+            }
+        }
+    }
+    document.write(arrB);
+
+    // for (let i = 0; i < size1.length; i++){
+    //     for (let j = i + 1; i < size2.length; j++){
+    //         if (array2[j] !== array1[i]) {
+    //             count++;
+    //         }
+    //     }
+    // }
+    // document.write(count);
+</script>
+</body>
+</html>

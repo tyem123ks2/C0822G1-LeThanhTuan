@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [1, 2, 2];
+    let arr2 = [5, 9, 7];
+    let max = arr1[0] / arr2[0];
+    let numerator = arr1[0];
+    let denominator = arr2[0];
+    let index = 0;
+    for (let i = 1; i < arr1.length; i++) {
+        if (arr1[i] / arr2[i] > max) {
+            max = arr1[i] / arr2[i];
+            numerator = arr1[i];
+            denominator = arr2[i];
+            index = i;
+        }
+    }
+    document.write(numerator + "/" + denominator + " là phân số lớn nhất, " + " có chỉ số là: " + index);
+</script>
+</body>
+</html>

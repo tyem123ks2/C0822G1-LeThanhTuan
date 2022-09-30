@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ntotal = prompt("Nhập tổng số tiền lương trước thuế (VNĐ): ");
+    let nsalary = ntotal / 100;
+    ntotal = parseFloat(ntotal);
+    nsalary = parseFloat(nsalary);
+
+    if (ntotal <= 7000000) {
+        alert("Tiền thuế thu nhập tháng này là:  " + (nsalary) * 5 + "VNĐ");
+        alert("Tổng tiền lương thực nhận là: " + (ntotal - (nsalary * 5)));
+    } else if (ntotal > 7000000 && ntotal <= 15000000) {
+        alert("Tiền thuế thu nhập tháng này là:  " + (nsalary) * 10 + "VNĐ");
+        alert("Tổng tiền lương thực nhận là: " + (ntotal - (nsalary * 10)));
+    } else {
+        alert("Tiền thuế thu nhập tháng này là:  " + (nsalary) * 20 + "VNĐ");
+        alert("Tổng tiền lương thực nhận là: " + (ntotal - (nsalary * 20)));
+    }
+</script>
+</body>
+</html>
